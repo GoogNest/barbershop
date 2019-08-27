@@ -1,0 +1,11 @@
+
+* {
+  outline: 1px solid green;
+}
+
+::before {
+  content: attr(class);
+  background: yellow;
+  color: black;
+  overflow: hidden;
+}

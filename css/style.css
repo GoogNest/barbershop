@@ -357,6 +357,17 @@ a {
   list-style: none;
 }
 
+html, body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+body {
+  background-image: url('../img/barbershop-index.jpg');
+  background-size: 1372px auto;
+  background-repeat: no-repeat;
+}
+
 .visually-hidden{
     position: absolute;
     width: 1px;
