@@ -1,11 +1,17 @@
 
 * {
   outline: 1px solid green;
+  overflow: hidden;
+  content: attr(class);
 }
 
 ::before {
+  display: none;
   content: attr(class);
   background: yellow;
   color: black;
+  outline: 0px;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
