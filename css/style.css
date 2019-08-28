@@ -168,7 +168,7 @@ a {
     line-height: 20px;
     color:#ffffff;
 
-    background-color: #000000;
+    background-color: transparent;
 }
 
 .site-navigation,
@@ -357,25 +357,6 @@ a {
   list-style: none;
 }
 
-
-
-html, body {
-  min-width: 1122px;
-  min-height: 1750px;
-}
-
-body {
-  background-image: url('../img/barbershop-index.jpg');
-  background-size: 1372px auto;
-  background-repeat: no-repeat;
-}
-
-.main-header {
-  margin-bottom: 75px;
-}
-
-
-
 .visually-hidden{
     position: absolute;
     width: 1px;
@@ -387,8 +368,165 @@ body {
     overflow: hidden;
 }
 
-/* ДЛЯ СЕТКИ */
+/*  GRID    */
+
+html, body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
 .main-header {
+  margin-bottom: 75px;
+}
+
+.main-header {/* ДЛЯ СЕТКИ */
   min-height: 285px;
 }
 
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    /* ДЛЯ СЕТКИ */
+    min-height: 285px;
+
+}
+
+.main-header-logo {
+    width: 368px;
+    height: 153px;
+    order: 2;
+}
+
+.main-navigation-wrapper {
+    width: 100%;
+    margin-bottom: 60px;
+
+    background-color: #000000;
+
+    min-height: 70px;/*for grid*/
+}
+
+.main-navigation-wrapper .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation {
+    width: 680px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    min-height: 70px;/* ДЛЯ СЕТКИ */ 
+}
+
+.user-navigation {
+    width: 140px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    min-height: 70px;/* ДЛЯ СЕТКИ */ 
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
+.features-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    min-height: 170px;/* ДЛЯ СЕТКИ */ 
+}
+
+.feature-item {
+    width: 300px;
+
+    min-height: 170px;/* ДЛЯ СЕТКИ */ 
+}
+
+.index-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+}
+
+.news {
+    width: 380px;
+
+    min-height: 315px;/* ДЛЯ СЕТКИ */ 
+}
+
+.gallery {
+    width: 300px;
+
+    min-height: 315px;/* ДЛЯ СЕТКИ */ 
+}
+
+.contacts {
+    width: 380px;
+
+    min-height: 295px;/* ДЛЯ СЕТКИ */ 
+}
+
+.appointment {
+    width: 300px;
+
+    min-height: 340px;/* ДЛЯ СЕТКИ */ 
+}
+
+.main-footer {
+    padding: 60px 0;
+    margin-top: 30px;
+
+    /* ДЛЯ СЕТКИ */
+    min-height: 180px;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-contacts {
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
+
+    /* ДЛЯ СЕТКИ */ 
+    min-height: 100px;
+}
+
+.footer-social {
+    width: 145px;
+    /* ДЛЯ СЕТКИ */ 
+    min-height: 100px;
+}
+
+.footer-copyright {
+    width: 150px;
+    margin: 0;
+    margin-left: auto;
+
+    /* ДЛЯ СЕТКИ */ 
+    min-height: 100px;
+}
+
+.site-navigation {
+    display: flex;
+}

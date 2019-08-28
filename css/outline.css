@@ -1,12 +1,35 @@
+.header,
+.main-header {
+  outline: 1px solid red;
+  overflow: hidden;
+  content: attr(class);
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.container {
+  outline: 1px solid blue;
+  overflow: hidden;
+  content: attr(class);
+  background: rgba(0, 0, 255, 0.1);
+}
+
+.main-header-logo,
+.features-list {
+  outline: 1px solid yellow;
+  overflow: hidden;
+  content: attr(class);
+  background: rgba(255, 255, 0, 0.1);
+}
 
 * {
   outline: 1px solid green;
   overflow: hidden;
   content: attr(class);
+  background: rgba(0, 255, 0, 0.1);
 }
 
 ::before {
-  display: none;
+  position: absolute;
   content: attr(class);
   background: yellow;
   color: black;
@@ -14,4 +37,9 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
+}
+ html, body {
+   overflow: auto;
+   outline: none;
+   background-color: transparent;
 }
