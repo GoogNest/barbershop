@@ -561,12 +561,52 @@ html, body {
   min-height: 687px;
 }
 
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  
+  list-style: none;
+}
+
+.catalog-item {
+  width: 220px;
+  margin-bottom: 19px;
+  margin-right: 20px;
+  margin-top: 4px;
+  
+  /* vremenno */
+  min-height: 285px;
+  background-color: transparent;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  
+  /* vremenno */
+  min-height: 42px;
+}
+
 .main-footer {
   padding: 60px 0;
   margin-top: 30px;
   
   /* ДЛЯ СЕТКИ */
   min-height: 180px;
+}
+
+.inner-page .main-footer{
+  margin-top: 46px;
+  background: none;
 }
 
 .main-footer .container {

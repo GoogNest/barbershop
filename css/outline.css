@@ -1,5 +1,7 @@
 .header,
-.main-header {
+.main-header,
+.footer,
+.main-footer{
   outline: 1px solid red;
   overflow: hidden;
   content: attr(class);
