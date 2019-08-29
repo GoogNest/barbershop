@@ -375,8 +375,11 @@ html, body {
   min-height: 1750px;
 }
 
-.inner-page {
-  background-image: url("../img/barbershop-item.jpg")
+.inner-page {/* ВРЕМЕННО */
+  background-image: url("../img/barbershop-shop.jpg");
+  background-size: 1200px auto;
+  background-position: top center;
+  background-repeat: no-repeat;
   
 }
 
@@ -390,8 +393,13 @@ html, body {
   margin-bottom: 75px;
 }
 
-.main-header {/* ДЛЯ СЕТКИ */
-  min-height: 285px;
+.inner-page .main-header {
+  margin-bottom: 50px;
+  
+  background-color: #000000;
+  /* временно */
+  min-height: 70px;
+  background-color: transparent;
 }
 
 .main-navigation {
@@ -401,13 +409,28 @@ html, body {
    
     /* ДЛЯ СЕТКИ */
     min-height: 285px;
+}
 
+.inner-page .main-navigation {
+  align-items: flex-start;
+  flex-direction: row;
+  
+  /* vremenno */
+  min-height: 70px;
 }
 
 .main-header-logo {
     width: 368px;
     height: 153px;
     order: 2;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+  
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
 }
 
 .main-navigation-wrapper {
@@ -442,6 +465,11 @@ html, body {
     list-style: none;
 
     min-height: 70px;/* ДЛЯ СЕТКИ */ 
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
+  background-color: #000000;
 }
 
 .features {
