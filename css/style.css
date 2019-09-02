@@ -530,6 +530,8 @@ html, body {
   padding: 0;
   
   /* vremenno */
+  font-size: 30px;
+  line-height: 42px;
   min-height: 42px;
 }
 
@@ -606,7 +608,6 @@ html, body {
 
 .inner-page .main-footer{
   margin-top: 46px;
-  background: none;
 }
 
 .main-footer .container {
