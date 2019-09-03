@@ -375,13 +375,13 @@ html, body {
   min-height: 1750px;
 }
 
-.inner-page {/* ВРЕМЕННО */
-  background-image: url("../img/barbershop-shop.jpg");
+/*.inner-page {       ВРЕМЕННО 
+  background-image: url("../img/barbershop-item.jpg");
   background-size: 1200px auto;
   background-position: top center;
   background-repeat: no-repeat;
   
-}
+}*/
 
 .container {
   width: 940px;
@@ -399,7 +399,6 @@ html, body {
   background-color: #000000;
   /* временно */
   min-height: 70px;
-  background-color: transparent;
 }
 
 .main-navigation {
@@ -581,7 +580,6 @@ html, body {
   
   /* vremenno */
   min-height: 285px;
-  background-color: transparent;
 }
 
 .catalog-item:nth-child(3n) {
@@ -596,6 +594,20 @@ html, body {
   
   /* vremenno */
   min-height: 42px;
+}
+
+.product-photos {
+  width: 460px;
+  
+  /* vremenno */
+  min-height: 677px;
+}
+
+.product-info {
+  width: 390px;
+  
+  /* vremenno */
+  min-height: 677px;
 }
 
 .main-footer {
