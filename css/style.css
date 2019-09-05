@@ -24,8 +24,262 @@ body {
   background-repeat: repeat;
 }
 
+html, body {
+  min-width: 1122px;
+  min-height: 1750px;
+}
+
 a {
   text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.button {
+  font: inherit;
+  
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  text-transform: uppercase;
+  
+  background-color: #000000;
+  border: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 75px;
+}
+
+.inner-page .main-header {
+  margin-bottom: 50px;
+  
+  background-color: #000000;
+  /* временно */
+  min-height: 70px;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  font-size: 16px;
+  line-height: 20px;
+  color:#ffffff;
+  
+  background-color: transparent;
+  
+  
+}
+
+.inner-page .main-navigation {
+  align-items: flex-start;
+  flex-direction: row;
+  
+  
+}
+
+.main-header-logo {
+  width: 368px;
+  height: 153px;
+  order: 2;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+  
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+  
+  background-color: #000000;
+  
+  min-height: 70px;  /*for grid*/
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  
+  width: 620px;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  
+  min-height: 70px;/* ДЛЯ СЕТКИ */
+}
+
+.user-navigation {
+  display: flex;
+  max-width: 140px;
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+  
+  min-height: 70px;/* ДЛЯ СЕТКИ */
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
+}
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  padding: 26px 20px;
+  vertical-align: middle;
+  
+  color: #ffffff;
+}
+
+.user-navigation .login-link {
+  padding-left: 50px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:active,
+.user-navigation a:hover,
+.user-navigation a:active {
+  background-color: #242424;
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item {
+  text-align: center;
+}
+
+.feature-item h3 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.index-columns {
+  color: #000000;
+  
+  background-color: #f8f5f2;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.index-columns h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.news-list {
+  list-style: none;
+}
+
+.news-item time {
+  text-transform: none;
+}
+
+.gallery-content {
+  background-color: #cccccc;
+  border: 7px solid #ffffff;
+}
+
+.appointment-item input {
+  font: inherit;
+  
+  background-color: transparent;
+  border: 2px solid #000000;
+}
+
+.appointment-item input:focus {
+  border-color: #663d15;
+}
+
+.main-footer {
+  color: #ffffff;
+  
+  background-color: #232323;
+  background-image: url("../img/pattern-dark.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.footer-contacts a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: #ffffff;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus {
+  color: #000000;
+  
+  background-color: #ffffff;
 }
 
 .page-title {
@@ -145,141 +399,39 @@ a {
   background-color: #ffffff;
 }
 
-.button {
-  font: inherit;
-  
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
-  text-transform: uppercase;
-  
-  background-color: #000000;
-  border: none;
+.product-photo-preview {
+  list-style: none;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
-  background-color: #663d15;
+.product-photo-preview li {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
 }
 
-.main-navigation {
-  font-size: 16px;
+.product-photo-full {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product-article {
+  text-align: right;
+  color: #aeaeae;
+}
+
+.product-price b {
   line-height: 20px;
-  color:#ffffff;
-  
-  background-color: transparent;
-}
-
-.site-navigation,
-.user-navigation {
-  list-style: none;
-}
-
-.site-navigation a,
-.user-navigation a {
-  color: #ffffff;
-}
-
-.site-navigation a:hover,
-.site-navigation a:active,
-.user-navigation a:hover,
-.user-navigation a:active {
-  background-color: #242424;
-}
-
-.features-list {
-  list-style: none;
-}
-
-.feature-item {
   text-align: center;
-}
-
-.feature-item h3 {
-  font-size: 30px;
-  line-height: 42px;
-}
-
-.index-columns {
-  color: #000000;
   
-  background-color: #f8f5f2;
-  background-image: url("../img/pattern-light.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-color: #e5e5e5;
 }
 
-.index-columns h2 {
-  font-size: 30px;
-  line-height: 42px;
+.product-info h3 {
+  font-size: 24px;
+  line-height: 30px;
 }
 
-.news-list {
+.product-info ul {
   list-style: none;
 }
 
-.news-item time {
-  text-transform: none;
-}
-
-.gallery-content {
-  background-color: #cccccc;
-  border: 7px solid #ffffff;
-}
-
-.appointment-item input {
-  font: inherit;
-  
-  background-color: transparent;
-  border: 2px solid #000000;
-}
-
-.appointment-item input:focus {
-  border-color: #663d15;
-}
-
-.main-footer {
-  color: #ffffff;
-  
-  background-color: #232323;
-  background-image: url("../img/pattern-dark.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
-}
-
-.footer-contacts a {
-  color: #ffffff;
-  text-decoration: underline;
-}
-
-.footer-contacts a:hover,
-.footer-contacts a:focus {
-  text-decoration: none;
-}
-
-.footer-social {
-  text-align: center;
-}
-
-.footer-social ul {
-  list-style: none;
-}
-
-.social-button {
-  color: #ffffff;
-}
-
-.footer-copyright {
-  text-align: center;
-}
-
-.footer-copyright .button:hover,
-.footer-copyright .button:focus {
-  color: #000000;
-  
-  background-color: #ffffff;
-}
 
 .modal {
   color: #000000;
@@ -324,56 +476,10 @@ a {
   text-decoration: none;
 }
 
-.product-photo-preview {
-  list-style: none;
-}
-
-.product-photo-preview li {
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
-}
-
-.product-photo-full {
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
-}
-
-.product-article {
-  text-align: right;
-  color: #aeaeae;
-}
-
-.product-price b {
-  line-height: 20px;
-  text-align: center;
-  
-  background-color: #e5e5e5;
-}
-
-.product-info h3 {
-  font-size: 24px;
-  line-height: 30px;
-}
-
-.product-info ul {
-  list-style: none;
-}
-
-.visually-hidden{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
 
 /*  GRID    */
 
-html, body {
-  min-width: 1122px;
-  min-height: 1750px;
-}
+
 
 /*.inner-page {       ВРЕМЕННО 
   background-image: url("../img/barbershop-item.jpg");
@@ -383,93 +489,9 @@ html, body {
   
 }*/
 
-.container {
-  width: 940px;
-  margin: 0 auto;
-  padding: 0 10px;
-}
 
-.main-header {
-  margin-bottom: 75px;
-}
 
-.inner-page .main-header {
-  margin-bottom: 50px;
-  
-  background-color: #000000;
-  /* временно */
-  min-height: 70px;
-}
 
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  /* ДЛЯ СЕТКИ */
-  min-height: 285px;
-}
-
-.inner-page .main-navigation {
-  align-items: flex-start;
-  flex-direction: row;
-  
-  /* vremenno */
-  min-height: 70px;
-}
-
-.main-header-logo {
-  width: 368px;
-  height: 153px;
-  order: 2;
-}
-
-.inner-page .main-header-logo {
-  order: 0;
-  
-  width: 111px;
-  height: 24px;
-  padding: 23px 20px;
-}
-
-.main-navigation-wrapper {
-  width: 100%;
-  margin-bottom: 60px;
-  
-  background-color: #000000;
-  
-  min-height: 70px;/*for grid*/
-}
-
-.main-navigation-wrapper .container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.site-navigation {
-  display: flex;
-  width: 600px;
-  margin: 0;
-  padding: 0;
-  
-  list-style: none;
-  
-  min-height: 70px;/* ДЛЯ СЕТКИ */
-}
-
-.user-navigation {
-  width: 140px;
-  margin: 0;
-  padding: 0;
-  
-  list-style: none;
-  
-  min-height: 70px;/* ДЛЯ СЕТКИ */
-}
-
-.inner-page .user-navigation {
-  margin-left: auto;
-}
 
 .features {
   margin-bottom: 80px;
