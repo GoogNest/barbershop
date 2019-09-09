@@ -267,10 +267,16 @@ input[type="radio"].visually-hidden {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+  
   color: #000000;
   
   background-color: #f8f5f2;
-  background-image: url("../img/pattern-light.jpg");
+  background-image: url("../img/line.png"),
+  url("../img/pattern-light.jpg");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -556,12 +562,6 @@ input[type="radio"].visually-hidden {
 
 
 
-.index-columns {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 80px;
-  margin-bottom: 35px;
-}
 
 .news {
   width: 380px;
