@@ -179,7 +179,32 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation .login-link {
+  position: relative;
   padding-left: 50px;
+  
+}
+
+.login-link::before {
+  content: "";
+  
+  position: absolute;
+  top: 27px;
+  left: 24px;
+  
+  width: 16px;
+  height: 16px;
+  
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:active::before,
+.login-link:focus::before {
+  opacity: 1;
 }
 
 .site-navigation a:hover,
