@@ -241,8 +241,6 @@ input[type="radio"].visually-hidden {
   width: 300px;
   
   text-align: center;
-  
-  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .feature-item h3 {
@@ -273,7 +271,6 @@ input[type="radio"].visually-hidden {
 
 .feature-item p {
   margin: 0 25px;
-  background-color: rgba(0, 0, 255, 0.2)
 }
 
 .index-columns {
@@ -302,9 +299,6 @@ input[type="radio"].visually-hidden {
 
 .news {
   width: 380px;
-  
-  min-height: 315px;/* ДЛЯ СЕТКИ */
-  background-color: rgba(0, 0, 125, 0.2)
 }
 
 .news-list {
@@ -329,16 +323,11 @@ input[type="radio"].visually-hidden {
 
 .gallery {
   width: 300px;
-  
-  min-height: 315px;/* ДЛЯ СЕТКИ */
 }
 
 .gallery-container {
   position: relative;
   height: 260px;
-  
-  background-color: rgba(255, 0, 0, 0.2);
-  outline: solid 2px red;
 }
 
 .gallery-content {
