@@ -39,6 +39,10 @@ img {
 }
 
 .button {
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 30px;
+  
   font: inherit;
   
   text-align: center;
@@ -54,6 +58,13 @@ img {
 .button:focus,
 .button:active {
   background-color: #663d15;
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #000000;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -274,28 +285,72 @@ input[type="radio"].visually-hidden {
   color: #000000;
   
   background-color: #f8f5f2;
-  background-image: url("../img/line.png"),
-  url("../img/pattern-light.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-image: 
+    url("../img/line.png"),
+    url("../img/pattern-light.jpg");
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
 }
 
 .index-columns h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  
   font-size: 30px;
   line-height: 42px;
 }
 
+.news {
+  width: 380px;
+  
+  min-height: 315px;/* ДЛЯ СЕТКИ */
+  background-color: rgba(0, 0, 125, 0.2)
+}
+
 .news-list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  
   list-style: none;
+}
+
+.news-item {
+  margin-bottom: 25px;
+}
+
+.news-item p {
+  margin: 0;
 }
 
 .news-item time {
   text-transform: none;
 }
 
+.gallery {
+  width: 300px;
+  
+  min-height: 315px;/* ДЛЯ СЕТКИ */
+}
+
 .gallery-content {
+  height: 164px;
+  margin: 0;
+  
   background-color: #cccccc;
   border: 7px solid #ffffff;
+}
+
+.contacts {
+  width: 380px;
+  
+  min-height: 295px;/* ДЛЯ СЕТКИ */
+}
+
+.appointment {
+  width: 300px;
+  
+  min-height: 340px;/* ДЛЯ СЕТКИ */
 }
 
 .appointment-item input {
@@ -559,32 +614,6 @@ input[type="radio"].visually-hidden {
 }*/
 
 
-
-
-
-.news {
-  width: 380px;
-  
-  min-height: 315px;/* ДЛЯ СЕТКИ */
-}
-
-.gallery {
-  width: 300px;
-  
-  min-height: 315px;/* ДЛЯ СЕТКИ */
-}
-
-.contacts {
-  width: 380px;
-  
-  min-height: 295px;/* ДЛЯ СЕТКИ */
-}
-
-.appointment {
-  width: 300px;
-  
-  min-height: 340px;/* ДЛЯ СЕТКИ */
-}
 
 .page-title {
   margin: 0;
