@@ -333,6 +333,14 @@ input[type="radio"].visually-hidden {
   min-height: 315px;/* ДЛЯ СЕТКИ */
 }
 
+.gallery-container {
+  position: relative;
+  height: 260px;
+  
+  background-color: rgba(255, 0, 0, 0.2);
+  outline: solid 2px red;
+}
+
 .gallery-content {
   height: 164px;
   margin: 0;
@@ -341,19 +349,71 @@ input[type="radio"].visually-hidden {
   border: 7px solid #ffffff;
 }
 
+.gallery-content img {
+  height: 164px;
+  width: 286px;
+}
+
+.gallery-button {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-button-back {
+  left: 0;
+}
+
+.gallery-button-next {
+  right: 0;
+}
+
 .contacts {
   width: 380px;
   
   min-height: 295px;/* ДЛЯ СЕТКИ */
 }
 
+.contacts p {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
 .appointment {
   width: 300px;
-  
-  min-height: 340px;/* ДЛЯ СЕТКИ */
+}
+
+.appointment-info {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.appointment-item {
+  width: 140px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.appointment-item label {
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 15px;
 }
 
 .appointment-item input {
+  box-sizing: border-box;
+  width: 140px;
+  padding: 7px 15px;
+  
   font: inherit;
   
   background-color: transparent;
@@ -362,6 +422,12 @@ input[type="radio"].visually-hidden {
 
 .appointment-item input:focus {
   border-color: #663d15;
+}
+
+.appointment .button {
+  width: 100%;
+  margin-top: 10px;
+  margin-right: 0;
 }
 
 .main-footer {
