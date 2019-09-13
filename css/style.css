@@ -439,19 +439,51 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social {
+  width: 145px;
+  
   text-align: center;
 }
 
 .footer-social ul {
+  display: flex;
+  width: 141px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 0;
+  
   list-style: none;
 }
 
 .social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  
+  background-color: #000000;
   color: #ffffff;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path {
+  fill: #000000;
 }
 
 .footer-copyright {
   text-align: center;
+}
+
+.footer-copyright b {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .footer-copyright .button:hover,
