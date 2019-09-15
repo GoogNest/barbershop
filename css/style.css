@@ -26,7 +26,6 @@ body {
 
 html, body {
   min-width: 1122px;
-  min-height: 1750px;
 }
 
 a {
@@ -518,6 +517,8 @@ input[type="radio"].visually-hidden {
   top: 120px;
   left: 50%;
   
+  /**/display: none;/**/
+  
   width: 300px;
   margin-left: -230px;
   padding: 50px 80px;
@@ -583,7 +584,7 @@ input[type="radio"].visually-hidden {
 .login-form input[type="password"] {
   box-sizing: border-box;
   width: 300px;
-  padding: 10px 40px 10px 15px;
+  padding: 10px 35px 10px 15px;
   
   font: inherit;
   color: #000000;
@@ -597,9 +598,74 @@ input[type="radio"].visually-hidden {
   border-color: #663d15;
 }
 
+.login-form .login-help {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.login-icon-user {
+  background-image: url("../img/user-svg.svg");
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
+
+.login-icon-password {
+  background-image: url("../img/lock-svg.svg");
+  background-position: 270px center;
+  background-repeat: no-repeat;
+}
+
+.login-checkbox {
+  position: relative;
+  padding-left: 30px;
+  
+  cursor: pointer;
+}
+
 .login-checkbox:hover,
 .login-checkbox:focus {
   color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 17px;
+  height: 17px;
+  
+  border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  
+  position: absolute;
+  top: 8px;
+  left: 1px;
+  
+  width: 15px;
+  height: 2px;
+  
+  background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator:before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator:after {
+  transform: rotate(-45deg);
 }
 
 .restore {
@@ -610,6 +676,11 @@ input[type="radio"].visually-hidden {
 .restore:hover,
 .restore:focus {
   text-decoration: none;
+}
+
+.login-form .button {
+  width: 100%;
+  margin-right: 0;
 }
 
 .page-title {
