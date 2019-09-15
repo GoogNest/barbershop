@@ -99,8 +99,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 50px;
   
   background-color: #000000;
-  /* временно */
-  min-height: 70px;
 }
 
 .main-navigation {
@@ -113,15 +111,11 @@ input[type="radio"].visually-hidden {
   color:#ffffff;
   
   background-color: transparent;
-  
-  
 }
 
 .inner-page .main-navigation {
   align-items: flex-start;
   flex-direction: row;
-  
-  
 }
 
 .main-header-logo {
@@ -143,8 +137,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 60px;
   
   background-color: #000000;
-  
-  min-height: 70px;  /*for grid*/
 }
 
 .main-navigation-wrapper .container {
@@ -161,8 +153,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   
   list-style: none;
-  
-  min-height: 70px;/* ДЛЯ СЕТКИ */
 }
 
 .user-navigation {
@@ -172,8 +162,6 @@ input[type="radio"].visually-hidden {
   padding: 0;
   
   list-style: none;
-  
-  min-height: 70px;/* ДЛЯ СЕТКИ */
 }
 
 .inner-page .user-navigation {
@@ -514,6 +502,116 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.modal {
+  position: fixed;
+  
+  color: #000000;
+  
+  background-color: #f8f3f0;
+  background-image: url("../img/pattern-light.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-login {
+  top: 120px;
+  left: 50%;
+  
+  width: 300px;
+  margin-left: -230px;
+  padding: 50px 80px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+  
+  width: 22px;
+  height: 22px;
+  
+  font-size: 0;
+  
+  background-color: transparent;
+  border: 0;
+  
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  
+  width: 19px;
+  height: 3px;
+  
+  background-color: #d0d0d0;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-description {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-form p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px 40px 10px 15px;
+  
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  
+  background-color: #f8f5f2;
+  border: 2px solid #000000;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+  color: #663d15;
+}
+
+.restore {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.restore:hover,
+.restore:focus {
+  text-decoration: none;
+}
+
 .page-title {
   font-size: 30px;
   line-height: 42px;
@@ -664,49 +762,6 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-
-.modal {
-  color: #000000;
-  
-  background-color: #f8f3f0;
-  background-image: url("../img/pattern-light.jpg");
-  background-position: 0 0;
-  background-repeat: repeat;
-}
-
-.modal h2 {
-  font-size: 30px;
-  line-height: 42px;
-}
-
-.login-form input[type="text"],
-.login-form input[type="password"] {
-  font: inherit;
-  color: #000000;
-  text-transform: uppercase;
-  
-  background-color: #f8f5f2;
-  border: 2px solid #000000;
-}
-
-.login-form input:focus {
-  border-color: #663d15;
-}
-
-.login-checkbox:hover,
-.login-checkbox:focus {
-  color: #663d15;
-}
-
-.restore {
-  color: #000000;
-  text-decoration: underline;
-}
-
-.restore:hover,
-.restore:focus {
-  text-decoration: none;
-}
 
 
 /*  GRID    */
