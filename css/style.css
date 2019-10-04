@@ -1052,22 +1052,33 @@ input[type="radio"].visually-hidden {
 .inner-columns {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   
   margin: 60px 0;
-  
-  background-color: rgba(120, 125, 0, 0.5);
 }
 
 .inner-columns-left,
 .inner-columns-right {
   width: 460px;
-  
-  box-shadow: 0 0 0 2px red;
 }
 
 .inner-columns-left *:first-child,
 .inner-columns-right *:first-child {
   margin-top: 0;
+}
+
+.inner-columns-left *:last-child,
+.inner-columns-right *:last-child {
+  margin-bottom: 0;
+}
+
+.inner-columns > h2:first-child {
+  width: 100%;
+  margin-top: 0;
+}
+
+.short-text {
+  padding-right: 80px;
 }
 
 /*  GRID    */
