@@ -1027,8 +1027,8 @@ input[type="radio"].visually-hidden {
   content: "";
   
   position: absolute;
-  top: 8px;
-  left: 0;
+  top: 7px;
+  left: 1px;
   
   width: 8px;
   height: 8px;
@@ -1037,6 +1037,38 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
 }
 
+.custom-table-1 {
+  width: 100%;
+}
+
+.custom-table-1 td {
+  width: 50%;
+}
+
+.custom-table-1 td:last-child {
+  text-align: center;
+}
+
+.inner-columns {
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 60px 0;
+  
+  background-color: rgba(120, 125, 0, 0.5);
+}
+
+.inner-columns-left,
+.inner-columns-right {
+  width: 460px;
+  
+  box-shadow: 0 0 0 2px red;
+}
+
+.inner-columns-left *:first-child,
+.inner-columns-right *:first-child {
+  margin-top: 0;
+}
 
 /*  GRID    */
 
