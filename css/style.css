@@ -893,6 +893,32 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  
+  left: -42px;
+  top: -1px;
+  width: 16px;
+  height: 16px;
+  
+  border: 2px solid #000000;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  
+  left: -36px;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  
+  background-color: #000000;
+  border-radius: 50%;
+}
+
 .catalog {
   width: 700px;
 }
