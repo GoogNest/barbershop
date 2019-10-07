@@ -898,9 +898,12 @@ input[type="radio"].visually-hidden {
   position: absolute;
   
   left: -42px;
-  top: -1px;
+  top: 0;
+  bottom: 0;
+  
   width: 16px;
   height: 16px;
+  margin: auto;
   
   border: 2px solid #000000;
   border-radius: 50%;
@@ -911,7 +914,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   
   left: -36px;
-  top: 5px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  
   width: 8px;
   height: 8px;
   
