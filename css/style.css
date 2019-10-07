@@ -753,11 +753,42 @@ input[type="radio"].visually-hidden {
 }
 
 .breadcrumbs {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
   
   list-style: none;
+}
+
+.breadcrumbs li {
+  position: relative;
+  margin-right: 42px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li::after {
+  content: "";
+  
+  position: absolute;
+  top: 7px;
+  right: -25px;
+  
+  width: 8px;
+  height: 8px;
+  
+  background-color: #000000;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs-current::after {
+  display: none;
 }
 
 .breadcrumbs a {
@@ -783,7 +814,15 @@ input[type="radio"].visually-hidden {
 }
 
 .filter fieldset {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  
   border: none;
+}
+
+.filter fieldset:first-child {
+  margin-bottom: 35px;
 }
 
 .filter legend {
