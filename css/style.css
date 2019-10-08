@@ -1130,7 +1130,6 @@ input[type="radio"].visually-hidden {
 .product-article {
   text-align: right;
   color: #aeaeae;
-  background-color: rgba(100, 0, 0, 0.1);
 }
 
 .product-description p {
@@ -1138,11 +1137,17 @@ input[type="radio"].visually-hidden {
 }
 
 .product-info h3 {
+  margin: 0;
+  margin-bottom: 27px;
+  
   font-size: 24px;
   line-height: 30px;
 }
 
 .product-info ul {
+  margin: 0;
+  padding: 0;
+  
   list-style: none;
 }
 
@@ -1161,15 +1166,36 @@ input[type="radio"].visually-hidden {
   padding-bottom: 11px;
   
   font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  
-  background-color: #e5e5e5;
-  box-sizing: border-box;
   line-height: 20px;
   text-align: center;
   
+  box-sizing: border-box;
+  
   background-color: #e5e5e5;
+}
+
+.product-price .button {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.product-info li {
+  position: relative;
+  padding-left: 23px;
+}
+
+.product-info li::before {
+  content: "";
+  
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  
+  width: 8px;
+  height: 8px;
+  
+  background-color: #000000;
+  transform: rotate(45deg);
 }
 
 .inner-content {
