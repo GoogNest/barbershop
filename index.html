@@ -229,8 +229,10 @@
       form.addEventListener("submit", function (evt) {
         if (!login.value || !pass.value) {
           evt.preventDefault();
-          console.log("не введена форма");
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
           popup.classList.add("modal-error");
+          console.log("пустая форма");
         }
         else{
         evt.preventDefault();
@@ -240,8 +242,8 @@
         console.log("отправка формы");
         console.log(login.value);
         console.log(pass.value);
-        popup.classList.add("modal-error");
         console.log(popup);
+        
         }
       });
       
