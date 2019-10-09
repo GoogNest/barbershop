@@ -565,6 +565,25 @@ input[type="radio"].visually-hidden {
   40%, 80% { transform: translateX(10px); }
 }
 
+@-webkit-keyframes bounce {
+  0%   { transform: translateY(-3000px); }
+  50%  { transform: translateY(30px); }
+  80%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@-webkit-keyframes opacityLay {
+  0%  { opacity: 0; }
+  50% { opacity: 0.5; }
+  100%{ opacity: 1; }
+}
+
+@-webkit-keyframes shake {
+  0%, 100% { transform: translateX(0px); }
+  20%, 60% { transform: translateX(-10px); }
+  40%, 80% { transform: translateX(10px); }
+}
+
 .modal-show {
   display: block;
 }
@@ -572,16 +591,22 @@ input[type="radio"].visually-hidden {
 .modal-login.modal-show {
  animation-name: bounce;
  animation-duration: 4s; 
+ -webkit-animation-name: bounce;
+ -webkit-animation-duration: 4s;
 }
 
 .modal-overlay.modal-show {
   animation-name: opacityLay;
   animation-duration: 1s;
+  -webkit-animation-name: opacityLay;
+  -webkit-animation-duration: 1s;
 }
 
 .modal-login.modal-error {
   animation-name: shake;
   animation-duration: 1s;
+  -webkit-animation-name: shake;
+  -webkit-animation-duration: 1s;
 }
 
 .modal-overlay {
