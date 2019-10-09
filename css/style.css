@@ -559,6 +559,12 @@ input[type="radio"].visually-hidden {
   100%{ opacity: 1; }
 }
 
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-10px); }
+  40%, 80% { transform: translateX(10px); }
+}
+
 .modal-show {
   display: block;
 }
@@ -571,6 +577,11 @@ input[type="radio"].visually-hidden {
 .modal-overlay.modal-show {
   animation-name: opacityLay;
   animation-duration: 1s;
+}
+
+.modal-error {
+  animation-name: shake;
+  animation-duration: 6s;
 }
 
 .modal-overlay {
