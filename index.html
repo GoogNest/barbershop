@@ -201,6 +201,15 @@
         overlay.classList.add("modal-show");
         
       });
+      
+      var close = document.querySelector(".modal-close");
+      
+      close.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        console.log("закрытие модалки");
+        popup.classList.remove("modal-show");
+        overlay.classList.remove("modal-show");
+      })
     </script>
 </body>
 </html>
