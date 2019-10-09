@@ -196,7 +196,15 @@
       var login = popup.querySelector("[name=login]");
       var pass = popup.querySelector("[name=password]");
       var form = popup.querySelector("form");
-      var storage = localStorage.getItem("login");
+      var storage = "";
+      var isStorageSupport = true;
+      
+      try {
+        storage = localStorage.getItem("login");
+      }
+      catch (err) {
+        isStorageSupport = false;
+      }
       
       link.addEventListener("click", function (evt) {
         evt.preventDefault();
@@ -224,10 +232,21 @@
         }
         else{
         evt.preventDefault();
+        if (isStorageSupport) {
         localStorage.setItem("login", login.value);
+        }
         console.log("отправка формы");
         console.log(login.value);
         console.log(pass.value);
+        }
+      });
+      
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          if (popup.classList.contains("modal-show")){
+            evt.preventDefault();
+            popup.classList.remove("modal-show");
+          }
         }
       });
     </script>
