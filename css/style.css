@@ -565,6 +565,13 @@ input[type="radio"].visually-hidden {
   40%, 80% { transform: translateX(10px); }
 }
 
+@keyframes slide {
+  0%   { transform: translateX(-2000px); }
+  75%  { transform: translateX(30px); }
+  90%  { transform: translateX(-10px); }
+  100% { transform: translateX(0px); }
+}
+
 @-webkit-keyframes bounce {
   0%   { transform: translateY(-3000px); }
   50%  { transform: translateY(30px); }
@@ -582,6 +589,13 @@ input[type="radio"].visually-hidden {
   0%, 100% { transform: translateX(0px); }
   20%, 60% { transform: translateX(-10px); }
   40%, 80% { transform: translateX(10px); }
+}
+
+@-webkit-keyframes slide {
+  0%   { transform: translateX(-2000px); }
+  75%  { transform: translateX(30px); }
+  90%  { transform: translateX(-10px); }
+  100% { transform: translateX(0px); }
 }
 
 .modal-show {
@@ -607,6 +621,13 @@ input[type="radio"].visually-hidden {
   animation-duration: 1s;
   -webkit-animation-name: shake;
   -webkit-animation-duration: 1s;
+}
+
+.modal-map.modal-show {
+  animation-name: slide;
+  animation-duration: 4s;
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 4s;
 }
 
 .modal-overlay {
