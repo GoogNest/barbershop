@@ -44,7 +44,6 @@ form.addEventListener("submit", function (evt) {
     console.log("пустая форма");
   }
   else{
-    evt.preventDefault();
     if (isStorageSupport) {
       localStorage.setItem("login", login.value);
     }
